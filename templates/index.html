@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowbite Flask</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
+</head>
+<body>
+    <div id="tasks"></div>
+    
+    <button id="add">Add Task</button>
+    
+    <!-- Modal for adding tasks -->
+    <div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 class="text-blue-600">Add Task</h2>
+        <input type="text" id="task-name" placeholder="Task name">
+        <button id="save">Save</button>
+    </div>
+    </div>
+</body>
